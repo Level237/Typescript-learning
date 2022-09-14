@@ -48,7 +48,7 @@ type Employee={
 
 /**********
  * Union Types
- */
+
 
 function kgToLbs(weight:number | string){
     // Narrowing
@@ -63,3 +63,21 @@ kgToLbs(10);
 kgToLbs("10kg")
 console.log(kgToLbs(10));
 console.log(kgToLbs("10kg"));
+ */
+
+/*********
+ * Intersection Types
+ */
+
+type Draggable={
+    drag:()=>void
+};
+type Resizable={
+    resize:()=>void
+}
+type UIWidget=Draggable & Resizable;
+
+let textBox:UIWidget={
+    drag:()=>{},
+    resize:()=>{}
+}
