@@ -67,7 +67,7 @@ console.log(kgToLbs("10kg"));
 
 /*********
  * Intersection Types
- */
+ 
 
 type Draggable={
     drag:()=>void
@@ -81,3 +81,17 @@ let textBox:UIWidget={
     drag:()=>{},
     resize:()=>{}
 }
+*/
+
+/***********
+ * Literal types
+
+
+// Literal(exact,specific)
+type Quantity=50| 100;
+let quantity:Quantity=100;
+
+type Metric='cm' | 'inch';
+ */
+
+
