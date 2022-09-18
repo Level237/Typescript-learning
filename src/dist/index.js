@@ -13,19 +13,16 @@ let employee:{
 }};
 employee.name="martin";
  */
-
-
 /****
- * 
+ *
  * Section 2: Advanced Learn to typescript
  * Type aliases
  * Union and Intersections
  * Type narrowing
  * nullable type
  * the never type
- * 
+ *
  */
-
 /*********
  * Type aliases
  * DRY: Don't repeat Yourself
@@ -44,8 +41,6 @@ type Employee={
     console.log(date)
 }};
 */
-
-
 /**********
  * Union Types
 
@@ -64,7 +59,6 @@ kgToLbs("10kg")
 console.log(kgToLbs(10));
 console.log(kgToLbs("10kg"));
  */
-
 /*********
  * Intersection Types
  
@@ -82,31 +76,19 @@ let textBox:UIWidget={
     resize:()=>{}
 }
 */
-
 /***********
  * Literal types
 
 
 // Literal(exact,specific)
-type Quantity=50| 100;  
+type Quantity=50| 100;
 let quantity:Quantity=100;
 
 type Metric='cm' | 'inch';
  */
-
-
 /*******
  * Nullable types
  */
-
-function greet(name:string | null | undefined){
-    if(name)
-        console.log(name.toUpperCase);
-    else
-        console.log("hola");
+function greet(name) {
+    console.log(name.toUpperCase);
 }
-
-greet(null);
-
-
-
